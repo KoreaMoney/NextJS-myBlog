@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Testcode-Jest",
+        "description": "Jest라이브러리의 기본 사용법 정리",
+        "date": "2023.12.07.",
+        "category": "TDD",
+        "path": "Test-Driven-Development",
+        "featured": false
+    },
+    {
+        "title": "NextJS 기초 문법",
+        "description": "NextJS버전 13이상에 대해 기본 문법부터 실전 사용법까지 정리",
+        "date": "2023.12.08.",
+        "category": "nextJS",
+        "path": "NextJS-basic",
+        "featured": false
+    },
+    {
+        "title": "자주 사용하는 React Hooks",
+        "description": "자주 사용하는 React Hooks의 내용을 정의하고 사용법까지 정리",
+        "date": "2023.09.27.",
+        "category": "react",
+        "path": "react-hook",
+        "featured": false
+    },
+    {
+        "title": "상태관리 라이브러리 Recoil",
+        "description": "atom만 사용하는 개발자들에게 selector의 사용법과 기본 문법까지 정리",
+        "date": "2023.09.24.",
+        "category": "recoil",
+        "path": "state-management-recoil",
+        "featured": false
+    },
+    {
+        "title": "중첩 라우팅 react-router-dom",
+        "description": "새로 나온 react-router-dom 버전 6에 대해 기본 문법과 사용법 정리",
+        "date": "2023.11.23.",
+        "category": "library",
+        "path": "react-router-dom-ver6",
+        "featured": false
+    }
+]
