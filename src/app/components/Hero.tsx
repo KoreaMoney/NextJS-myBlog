@@ -18,7 +18,9 @@ const Hero = () => {
             <h3 className="text-xl font-semibold">Frontend Engineer</h3>
             <p>Exploring and Growing Crazy Developers</p>
             <Link href="/contact">
-                <button className="bg-yellow-500 font-bold rounded-xl py-1 px-4 mt-2">Contact Me!</button>
+                <button className="bg-yellow-500 font-bold rounded-xl py-1 px-4 mt-2 hover:shadow-md  hover:text-yellow-500 hover:bg-zinc-50">
+                    Contact Me!
+                </button>
             </Link>
         </section>
     );
