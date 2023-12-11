@@ -1,5 +1,6 @@
 import { getPostData } from '@/service/posts';
 import React from 'react';
+import MarkdownViewer from '@/app/components/MarkdownViewer';
 interface IProps {
     params: {
         slug: string;
@@ -7,13 +8,12 @@ interface IProps {
 }
 
 const PostPage = async ({ params: { slug } }: IProps) => {
-    // 전달된 slug에 해당하는 포스트 데이터 읽어오기
     const post = await getPostData(slug);
 
     return (
         <>
             <h1>{post.title}</h1>
-            <pre>{post.content}</pre>
+            <MarkdownViewer content={post.content} />
         </>
     );
 };
