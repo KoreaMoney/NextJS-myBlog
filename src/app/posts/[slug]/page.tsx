@@ -1,6 +1,10 @@
-import { getPostData } from '@/service/posts';
 import React from 'react';
+import Image from 'next/image';
+import { getPostData } from '@/service/posts';
 import MarkdownViewer from '@/app/components/MarkdownViewer';
+
+import { AiTwotoneCalendar } from 'react-icons/ai';
+
 interface IProps {
     params: {
         slug: string;
@@ -8,13 +12,21 @@ interface IProps {
 }
 
 const PostPage = async ({ params: { slug } }: IProps) => {
-    const post = await getPostData(slug);
+    const { title, description, date, category, path, content } = await getPostData(slug);
 
     return (
-        <>
-            <h1>{post.title}</h1>
-            <MarkdownViewer content={post.content} />
-        </>
+        <article>
+            <Image src={`/images/posts/${path}.png`} alt={title} width={760} height={420} />
+            <section>
+                <div>
+                    <AiTwotoneCalendar />
+                    <p>{date.toString()}</p>
+                </div>
+                <h1>{title}</h1>
+
+                <MarkdownViewer content={content} />
+            </section>
+        </article>
     );
 };
 

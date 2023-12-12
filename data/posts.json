@@ -78,5 +78,13 @@
         "category": "Javascript",
         "path": "javascript",
         "featured": false
+    },
+    {
+        "title": "THREE.JS Beginner",
+        "description": "THREE.JS의 기본 사용법 + Portfolio제작",
+        "date": "2023-12-12",
+        "category": "Library",
+        "path": "threeJS",
+        "featured": false
     }
 ]

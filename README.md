@@ -13,3 +13,5 @@
 ### 👉 react multi carousel
 
 ### 👉 react-markdown
+
+### 👉 react-icons
