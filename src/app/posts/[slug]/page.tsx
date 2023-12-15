@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { getPostData } from '@/service/posts';
 import MarkdownViewer from '@/app/components/MarkdownViewer';
-
 import { AiTwotoneCalendar } from 'react-icons/ai';
 
 interface IProps {
