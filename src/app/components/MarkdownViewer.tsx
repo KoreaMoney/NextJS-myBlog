@@ -15,7 +15,7 @@ const MarkdownViewer = ({ content }: IProps) => {
     return (
         <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            className="prose lg:prose-xl"
+            className="prose max:prose-xl"
             components={{
                 code(props) {
                     const { ref, children, className, node, ...rest } = props;
@@ -32,7 +32,7 @@ const MarkdownViewer = ({ content }: IProps) => {
                 },
                 img: (image) => (
                     <Image
-                        className="w-full max-h-60 object-cover"
+                        className="w-full max-h-60 object-cover rounded-md"
                         src={image.src || ''}
                         alt={image.alt || ''}
                         width={500}
