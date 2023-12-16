@@ -25,7 +25,7 @@ const MarkdownViewer = ({ content }: IProps) => {
                             {String(children).replace(/\n$/, '')}
                         </SyntaxHighlighter>
                     ) : (
-                        <code {...rest} className={className}>
+                        <code className={className} {...props}>
                             {children}
                         </code>
                     );
